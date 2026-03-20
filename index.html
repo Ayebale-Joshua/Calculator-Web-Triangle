@@ -13,28 +13,41 @@
     <div class="calculator-container">
         <input type="text" value="0" id="display-label" readonly >
         <div id="button-container">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button onclick="numberPressed('(')">(</button>
+            <button onclick="numberPressed(')')">)</button>
+            <button id="deleteBtn" onclick="deletePressed()">Del</button>
+            <button id="clearBtn" onclick="clearPressed()">AC</button>
+
             <button id="7" onclick="numberPressed('7')">7</button>
             <button id="8" onclick="numberPressed('8')">8</button>
             <button id="9" onclick="numberPressed('9')">9</button>
-            <button id="deleteBtn" onclick="deletePressed()">Del</button>
-            <button id="clearBtn" onclick="clearPressed()">AC</button>
+            <button id="addBtn" onclick="operatorPressed('+')">+</button>
 
             <button id="4" onclick="numberPressed('4')">4</button>
             <button id="5" onclick="numberPressed('5')">5</button>
             <button id="6" onclick="numberPressed('6')">6</button>
-            <button id="multiplyBtn" onclick="operatorPressed('*')">×</button>
-            <button id="divideBtn" onclick="operatorPressed('/')">÷</button>
+            <button id="subtractBtn" onclick="operatorPressed('-')">−</button>
 
             <button id="3" onclick="numberPressed('3')">3</button>
             <button id="2" onclick="numberPressed('2')">2</button>
             <button id="1" onclick="numberPressed('1')">1</button>
-            <button id="addBtn" onclick="operatorPressed('+')">+</button>
-            <button id="subtractBtn" onclick="operatorPressed('-')">−</button>
+            <button id="multiplyBtn" onclick="operatorPressed('*')">x</button>
 
-
-            <button id="0" onclick="numberPressed('0')">0</button>
+            
             <button id="decimalBtn" onclick="decimalPressed('.')">.</button>
+            <button id="0" onclick="numberPressed('0')">0</button>
             <button id="exponentBtn" onclick="exponentPressed()">Exp</button>
+            <button id="divideBtn" onclick="operatorPressed('/')">÷</button>
+            <button></button>
+            <button></button>
             <button id="answerBtn" onclick="answerPressed()">Ans</button>
             <button id="computeBtn" onclick="computePressed()">=</button>
 
