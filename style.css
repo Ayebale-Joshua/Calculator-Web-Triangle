@@ -1,0 +1,75 @@
+body{
+    background-color: #aaaaac;
+}
+h1{
+    text-align: center;
+    color: rgb(38, 42, 48);
+    font-weight: bold;
+    font-size: 2.5rem;
+
+}
+
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(6, 0, 0, 0.845);
+}
+
+#button-container{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    gap: 5px;
+}
+
+button{
+    font-family: 'Verdana','Sans-serif';
+    font-size: 1.2em;
+    padding: 5px;
+    border: none;
+    border-radius: 5px 5px 12px 12px;
+    width: 60px;
+    height: 40px;
+    background-color: rgb(70, 69, 69);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clearBtn,#deleteBtn{
+    background-color: rgb(238, 161, 19);
+    color: black;
+}
+
+#display-label{
+    width: 100%;
+    font-size: 2em;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    background-color: rgb(226, 233, 231);
+    border-radius: 12px;
+    cursor:auto;
+}
+
+button:hover{
+    background-color: rgb(102, 100, 100);
+}
+
+#clearBtn:hover,#deleteBtn:hover{
+    background-color: rgb(220, 238, 19);
+}
+
+button:active{
+    background-color: rgb(161, 158, 158);
+}
+
+#clearBtn:active,#deleteBtn:active{
+    background-color: hsla(65, 87%, 50%, 0.722);
+}
